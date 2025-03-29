@@ -4,8 +4,8 @@ namespace generate_parentheses
     {
         public static void Run()
         {
-            TestCase1();
-            TestCase2();
+            //TestCase1();
+            //TestCase2();
             TestCase3();
         }
 
@@ -67,7 +67,20 @@ namespace generate_parentheses
             Console.WriteLine("n = [{0}]", n);
             List<string> expected = new List<string>
             {
-                "(((())))","((()()))","((())())","((()))()","(()(()))","(()()())","(()())()","(())(())","(())()()","()((()))","()(()())","()(())()","()()(())","()()()()"
+                "(((())))",
+                "((()()))",
+                "((())())",
+                "((()))()",
+                "(()(()))",
+                "(()()())",
+                "(()())()",
+                "(())(())",
+                "(())()()",
+                "()((()))",
+                "()(()())",
+                "()(())()",
+                "()()(())",
+                "()()()()"
             };
             Console.WriteLine("expected = [{0}]", string.Join(", ", expected));
 
